@@ -1,0 +1,12 @@
+{
+    "name": "sebastian/sandbox",
+    "description": "Sandbox to play with tools and technologies",
+    "type": "project",
+    "authors": [
+        {
+            "name": "NobodyExpectsTheSpanishInquisition",
+            "email": "s.miklaszewski1999@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -8,5 +8,7 @@
             "email": "s.miklaszewski1999@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "symplify/monorepo-builder": "^9.4"
+    }
 }

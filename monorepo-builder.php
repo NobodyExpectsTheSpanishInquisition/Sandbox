@@ -10,7 +10,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();
 
     $parameters->set(Option::PACKAGE_DIRECTORIES, [
-        __DIR__ . '/packages/php'
+        __DIR__ . '/packages/php',
     ]);
 
     // for "merge" command

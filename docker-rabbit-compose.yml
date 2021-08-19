@@ -1,0 +1,17 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5671:5671"
+      - "5672:5672"
+      - "15671:15671"
+    volumes:
+        - .:/src
+  proxy:
+    image: shopify/toxiproxy
+    ports:
+      - "8474:8474"
+      - "5673:5673"
+    depends_on:
+      - rabbitmq

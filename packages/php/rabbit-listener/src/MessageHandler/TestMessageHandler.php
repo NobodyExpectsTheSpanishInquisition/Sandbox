@@ -11,6 +11,7 @@ final class TestMessageHandler implements MessageHandlerInterface
 {
     public function __invoke(TestMessage $testMessage)
     {
-        echo "This message is from rabbit dispatcher";
+        echo $testMessage->getMessage();
+        echo "\n This was a message from rabbitmq listener.";
     }
 }

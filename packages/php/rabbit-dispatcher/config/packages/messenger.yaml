@@ -5,10 +5,10 @@ framework:
 
         transports:
             # https://symfony.com/doc/current/messenger.html#transport-configuration
-             async: '%env(MESSENGER_TRANSPORT_DSN)%'
             # failed: 'doctrine://default?queue_name=failed'
             # sync: 'sync://'
-
+             queue: '%env(MESSENGER_TRANSPORT_DSN)%'
+             queue2: '%env(MESSENGER_TRANSPORT_DSN2)%'
         routing:
             # Route your messages to the transports
-             'Shared\TestMessage': async
+             'Shared\TestMessage': [queue, queue2]
